@@ -1,0 +1,342 @@
+/* 
+div{
+    background-color: red;
+} */
+
+
+/* Discrreet */
+
+/* @media screen and (width <= 600px){
+    /* max-width = 600px */
+    /* div{
+        background-color: blueviolet;
+    }
+    
+} */
+
+/* range */
+/* @media screen and (400px <= width <= 600px){
+    div{
+        background-color: tomato;
+    }
+
+    body{
+        background-color: puple;
+    }
+    p{
+        display: none;
+    }
+    
+} */
+/* @media screen and (400px <= width){
+    div{
+        background-color: tomato;
+    }
+
+    body{
+        background-color: puple;
+    }
+    p{
+        display: none;
+    }
+    
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    padding: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.logo-div{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-color: red; */
+    color: white;
+
+}
+
+.logo span{
+    color: gold;
+}
+
+.navbar{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlinks{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+.navlinks li{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.burger{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.burger .line1{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+.burger .line2{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+}
+.burger .line3{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+
+
+
+
+/* @media screen  and (min-width:1240px){
+
+    .navlinks{
+        gap: 50px;
+    }
+    .burger{
+        display: none;
+    }
+    
+}
+@media screen  and (max-width= 425px){
+    .navlinks{
+        display: none;
+    }
+    
+} */
+
+@media screen  and (min-width:1240px){
+
+    .navlinks{
+        gap: 50px;
+    }
+    .burger{
+        display: none;
+    }
+    
+}
+
+
+@media screen  and (1080px <= width <= 1240px){
+    .burger{
+        display: none;
+    }
+    /* .navlinks{
+        gap: 50px;
+    }
+    */
+}
+@media screen  and (720px <= width <= 1080px){
+    .burger{
+        display: none;
+    }
+   
+    
+}
+
+@media screen  and (min-width:720px){
+    .navlinks{
+        gap: 10px;
+        justify-content: space-between;
+    }
+    
+}
+@media screen  and (425px <= width <= 720px){
+    .navbar{
+        justify-content: flex-end;
+        justify-items: flex-end;
+        margin-left: 50px;
+    }
+    .navlinks{
+        display: none;
+    }
+    .burger{
+        
+        justify-content: flex-end;
+    }
+}
+@media screen  and (0px <= width <= 425px){
+    .navlinks{
+        display: none;
+    }
+    .navbar{
+        justify-content: end;
+        margin-left: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .wrapper{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    box-shadow:"0px 0px 10px 10px #000000";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inner{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+   
+}
+
+@media screen  and (1080px <= width <= 1240px){
+    .wrapper{
+        background-color: blue;
+    }
+    .inner{
+        display: none;
+    }
+    
+}
+@media screen  and (720px <= width <= 1080px){
+    .wrapper{
+        background-color: red;
+    }
+   
+    
+}
+@media screen  and (425px <= width <= 720px){
+    .wrapper{
+        background-color: yellow;
+    }
+    
+}
+@media screen  and (320px <= width <= 425px){
+    .wrapper{
+        background-color: purple;
+    }
+    .inner{
+        display: none;
+    }
+} */
+/* @media screen  and (min-width:1240px){
+    .wrapper{
+        background-color: purple;
+    }
+    
+}
+@media screen  and (min-width:720px){
+    .wrapper{
+        background-color: red;
+    }
+    
+}
+@media screen  and (min-width:425px){
+    .wrapper{
+        background-color: yellow;
+    }
+    
+}
+@media screen  and (max-width:320px){
+    .wrapper{
+        background-color: purple;
+    }
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
